@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Project 9 Chez Jean</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+<div align="center"><h1>Chez Jean</h1></div>
+<div align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/The_Fat_Duck%2C_High_Street%2C_Bray_-_geograph.org.uk_-_1271175-MJ.jpg"></div>
+
+<div align="left"><p><strong>Reservations</strong></p></div>
+	
+	<form action="">
+		<input id="name" type="text" placeholder="name">
+		<input id="partySize" type="text" placeholder="partySize">
+		<input id="date" type="text" placeholder="date">
+		<input id="time" type="text" placeholder="time">
+		<button type="submit">Make Reservation</button>
+	</form>
+	
+
+
+	<ul class="reservations">
+	  <!-- Step 1: Create a handlebars template for a list item with the following format:
+	   		<li>{{item}} - ${{cost}}</li> 
+	   		Create a handlebars template inside the .groceries ul for a list item
+	with the following format: <li>{{item}} - ${{cost}}</li> 
+	Step 1: Create template -->
+		  <script id="reservationItem" type="text/x-handlebars-template">
+		    <li>{{name}} - {{partySize}} - {{date}} - {{time}} </li> 
+		  </script>
+	  
+	</ul>
+
+
+
+
+	<script src="js/jquery-3.0.0.js"></script>
+	<script src="js/handlebars-v4.0.5.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
